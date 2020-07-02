@@ -1,0 +1,38 @@
+ALGORITHM check1
+VAR
+    sentence:string;
+numb-char,numb-word,numbr-voyl:INTEGER;
+BEGIN
+    //read sentence 
+    REPEAT
+        whrite ("whrite sentence, which ends with a point");
+        read (sentence);
+    UNTIL (sentence[length[sentence]]=".")
+    //length of the sentence
+    numb-char=0;
+    FOR i FROM 0 TO length.sentence   DO
+        If (uppercase sentence[i]in [A,Z]) THEN
+           numb-char+=1;
+        END_IF
+    END_FOR
+ whrite ("le nombre de caractére est"numb-char );
+ // number of words
+ numb-word=0;
+  FOR i FROM 0 TO length.sentence   DO
+  IF (sentence[i]=" ") THEN
+      numb-word+=1;
+  END_IF
+  END_FOR
+  whrite ("le nombre de mots est"numb-word);
+  //number of vowels
+  numb-voyl=0
+   FOR i FROM 0 TO length.sentence   DO
+        If (uppercase sentence[i]in [A,O,U,E,I]) THEN
+           numb-voyl+=1;
+        END_IF
+    END_FOR
+     whrite ("le nombre de voyels est"numb-voyl);
+
+
+
+END
